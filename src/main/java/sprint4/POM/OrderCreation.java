@@ -1,4 +1,4 @@
-package sprint_4_project.POM;
+package sprint4.POM;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +20,7 @@ public class OrderCreation {
     private final By orderSurname = By.xpath(".//input[@placeholder='* Фамилия']");
 
     // поле Адрес
-    private final By orderAdress = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
+    private final By orderAddress = By.xpath(".//input[@placeholder='* Адрес: куда привезти заказ']");
 
     // поле Станция метро
     private final By orderSubwayStation = By.xpath(".//input[@placeholder='* Станция метро']");
@@ -80,7 +80,7 @@ public class OrderCreation {
         return sokolnikiStation;
     }
     public By getOrderAdress() {
-        return orderAdress;
+        return orderAddress;
     }
     public By getOrderSubwayStation() {
         return orderSubwayStation;

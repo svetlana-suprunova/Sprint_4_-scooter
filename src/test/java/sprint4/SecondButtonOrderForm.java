@@ -1,11 +1,11 @@
-package sprint_4_project;
+package sprint4;
 
 import org.junit.Test;
-import sprint_4_project.POM.MainPage;
-import sprint_4_project.POM.OrderCreation;
-import sprint_4_project.Steps.Steps;
+import sprint4.POM.MainPage;
+import sprint4.POM.OrderCreation;
+import sprint4.Steps.Steps;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class SecondButtonOrderForm extends BeforeAndAfter {
 
@@ -22,9 +22,7 @@ public class SecondButtonOrderForm extends BeforeAndAfter {
                 .click(mainPage.getSecondOrderButton());
 
 
-        assertEquals("Окна для ввода данных заказа нет на странице",
-                true,
-                steps.checkShown(orderCreation.getOrderForm()));
+        assertTrue("Окна для ввода данных заказа нет на странице", steps.checkShown(orderCreation.getOrderForm()));
 
 
     }

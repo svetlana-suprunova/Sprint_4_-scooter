@@ -1,12 +1,12 @@
-package sprint_4_project;
+package sprint4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
-import sprint_4_project.POM.MainPage;
-import sprint_4_project.POM.OrderCreation;
-import sprint_4_project.Steps.Steps;
+import sprint4.POM.MainPage;
+import sprint4.POM.OrderCreation;
+import sprint4.Steps.Steps;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
@@ -14,17 +14,17 @@ public class FirstButtonCreateOrderSuccess extends BeforeAndAfter {
 
     private final String name;
     private final String surname;
-    private final String adress;
+    private final String address;
     private final By subwayStation;
     private final String phone;
     private final By deviceColor;
 
     static OrderCreation orderCreation = new OrderCreation(driver);
 
-    public FirstButtonCreateOrderSuccess(String name, String surname, String adress, By subwayStation, String phone, By deviceColor) {
+    public FirstButtonCreateOrderSuccess(String name, String surname, String address, By subwayStation, String phone, By deviceColor) {
         this.name = name;
         this.surname = surname;
-        this.adress = adress;
+        this.address = address;
         this.subwayStation = subwayStation;
         this.phone = phone;
         this.deviceColor = deviceColor;
@@ -53,7 +53,7 @@ public class FirstButtonCreateOrderSuccess extends BeforeAndAfter {
                 .click(orderCreation.getSkipCookie())
                 .inputText(orderCreation.getOrderName(), name)
                 .inputText(orderCreation.getOrderSurname(), surname)
-                .inputText(orderCreation.getOrderAdress(), adress)
+                .inputText(orderCreation.getOrderAdress(), address)
                 .click(orderCreation.getOrderSubwayStation())
                 .click(subwayStation)
                 .inputText(orderCreation.getOrderPhone(), phone)
