@@ -1,4 +1,4 @@
-package SPRINT4;
+package sprint4;
 
 import org.junit.After;
 import org.junit.Before;
