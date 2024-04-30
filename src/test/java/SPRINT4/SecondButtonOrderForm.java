@@ -1,9 +1,9 @@
-package sprint4;
+package SPRINT4;
 
 import org.junit.Test;
-import sprint4.POM.MainPage;
-import sprint4.POM.OrderCreation;
-import sprint4.Steps.Steps;
+import SPRINT4.POM.MainPage;
+import SPRINT4.POM.OrderCreation;
+import SPRINT4.Steps.Steps;
 
 import static org.junit.Assert.assertTrue;
 

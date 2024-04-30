@@ -1,11 +1,11 @@
-package sprint4;
+package SPRINT4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
-import sprint4.POM.MainPage;
-import sprint4.Steps.Steps;
+import SPRINT4.POM.MainPage;
+import SPRINT4.Steps.Steps;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
