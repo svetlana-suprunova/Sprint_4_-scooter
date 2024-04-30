@@ -5,7 +5,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
 import sprint4.pom.MainPage;
-import sprint4.Steps.Steps;
+import sprint4.steps.Steps;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)

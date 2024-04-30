@@ -1,4 +1,4 @@
-package sprint4.Steps;
+package sprint4.steps;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

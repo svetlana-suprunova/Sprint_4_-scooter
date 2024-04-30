@@ -3,7 +3,7 @@ package sprint4;
 import org.junit.Test;
 import sprint4.pom.MainPage;
 import sprint4.pom.OrderCreation;
-import sprint4.Steps.Steps;
+import sprint4.steps.Steps;
 
 import static org.junit.Assert.assertTrue;
 
